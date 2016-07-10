@@ -1,10 +1,11 @@
 # serverless-microservice-guide
-Step by step guide to building a serverless service with node.js.
+Step by step guide to building a [Serverless](http://serverless.com/) service
+with Node.js.
 
-* [Prerequesites](#prerequesites)
+* [Prerequisites](#prerequisites)
 * [Repo Structure](#repo-structure)
 
-## Prerequesites
+## Prerequisites
 
 ### AWS Account
 This project uses Amazon Web Services (AWS) to host the service. You can build
@@ -12,8 +13,8 @@ and test the code without an account, but it's much more fun to deploy it!
 If you don't qualify for the AWS free tier, this project will cost no more than
 a few pennies. You will use the Lambda and API Gateway services.
 
-### Node.JS
-You'll need [Node.JS](https://nodejs.org/en/) installed for this project. At the
+### Node.js
+You'll need [Node.js](https://nodejs.org/en/) installed for this project. At the
 time of writing, [AWS Lambda uses version 4.3.2 of Node
 ](http://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html),
 so I recommend you use the same. I use [nvm](https://github.com/creationix/nvm)

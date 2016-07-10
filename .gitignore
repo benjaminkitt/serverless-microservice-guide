@@ -1,0 +1,26 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Coverage directory
+coverage
+
+# Dependency directories
+node_modules
+
+# Compiled JS files
+*.js
+
+# Serverless
+_meta
+admin.env
+.env
+tmp
+
+# OS
+.DS_Store
+.tmp
+
+# Typings
+typings
