@@ -1,0 +1,31 @@
+{
+  "name": "serverless-microservice-guide",
+  "version": "1.0.0",
+  "description": "Step by step guide to building a Serverless service with Node.js.",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminkitt/serverless-microservice-guide.git"
+  },
+  "keywords": [
+    "serverless",
+    "microservice",
+    "aws",
+    "node.js",
+    "lambda",
+    "api-gateway",
+    "typescript",
+    "javascript",
+    "guide",
+    "tutorial"
+  ],
+  "author": "Benjamin Kitt <benjamin@benjaminkitt.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjaminkitt/serverless-microservice-guide/issues"
+  },
+  "homepage": "https://github.com/benjaminkitt/serverless-microservice-guide#readme"
+}
