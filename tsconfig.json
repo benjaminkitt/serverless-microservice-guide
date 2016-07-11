@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "rootDir": ".",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "pretty": true
+  },
+  "filesGlob": [
+    "functions/**/*.{d.ts|ts}"
+  ],
+  "include": [
+    "functions/**/*.{d.ts|ts}"
+  ]
+}
