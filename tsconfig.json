@@ -11,9 +11,11 @@
     "pretty": true
   },
   "filesGlob": [
-    "functions/**/*.{d.ts|ts}"
+    "functions/**/*.ts",
+    "typings/index.d.ts"
   ],
   "include": [
-    "functions/**/*.{d.ts|ts}"
+    "functions/**/*.ts",
+    "typings/index.d.ts"
   ]
 }
