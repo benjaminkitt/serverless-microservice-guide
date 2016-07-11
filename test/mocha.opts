@@ -1,0 +1,8 @@
+./functions/**/*.spec.js
+
+--reporter spec
+--ui bdd
+--recursive
+--timeout 5000
+--bail
+--watch-extensions js,json
