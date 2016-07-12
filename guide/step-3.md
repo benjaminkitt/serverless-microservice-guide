@@ -1,4 +1,4 @@
-# Add Typescript support
+# Step 3 - Add Typescript support
 
 Next, you're going to add [Typescript](https://www.typescriptlang.org/) to the project. Typescript is a typed superset of JavaScript that brings several
 advantages including:

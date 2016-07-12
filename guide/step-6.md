@@ -1,4 +1,4 @@
-# Write the Lambda function part 1 - node-readability
+# Step 6 - Write the Lambda function part 1 - node-readability
 
 You'll use the [node-readability](https://github.com/luin/readability) library
 to fetch the html at the URL and simplify it before converting it to markdown.

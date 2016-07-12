@@ -1,4 +1,4 @@
-# Configure API Gateway endpoint
+# Step 5 - Configure API Gateway endpoint
 
 Before writing the handler, you need to configure API Gateway to pass the `url`
 querystring parameter to the lambda function.

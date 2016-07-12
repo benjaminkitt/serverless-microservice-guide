@@ -1,4 +1,4 @@
-# Write the Lambda function part 2 - upndown
+# Step 7 - Write the Lambda function part 2 - upndown
 
 You'll be using the [upndown](https://github.com/netgusto/upndown) library to
 convert the simplified HTML from readability into markdown.

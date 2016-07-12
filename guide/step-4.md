@@ -1,4 +1,4 @@
-# Adding unit tests
+# Step 4 - Adding unit tests
 
 Unit tests are extremely important factor when developing a robust microservice.
 You'll be using the [Mocha](https://mochajs.org/) unit test runner, along with
