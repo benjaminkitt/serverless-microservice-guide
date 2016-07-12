@@ -1,7 +1,9 @@
+/// <reference path="mute.d.ts"/>
 import { use, expect } from 'chai'
 import { stub, match } from 'sinon'
 import * as sinonChai from 'sinon-chai'
 import * as nock from 'nock'
+import * as mute from 'mute'
 import { handler } from './handler'
 
 use(sinonChai)
@@ -35,7 +37,9 @@ describe('The markdown function', () => {
     cb = stub()
 
     // Call handler with mocks
+    let unmute: Function = mute()
     await handler(evt, {}, cb)
+    unmute()
   })
 
   it('should retrieve the provided url', () => {
