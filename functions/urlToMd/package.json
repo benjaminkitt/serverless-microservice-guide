@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "node-readability": "2.2.0"
+  }
+}
