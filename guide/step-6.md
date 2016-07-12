@@ -15,6 +15,8 @@ echo "{}" > package.json
 npm install --save node-readability
 ```
 
+[See the resulting file on GitHub](https://github.com/benjaminkitt/serverless-microservice-guide/blob/step-6/functions/urlToMd/package.json)
+
 ## Generate readable HTML
 
 Now that node-readability is installed, start by importing it into handler.ts.
@@ -28,7 +30,7 @@ import * as readability from 'node-readability'
 If you have Typescript linting enabled, you'll notice Typescript cannot find the
 module. This is because you have not installed type definitions and, at the time
 of writing, node-readability does not have any available. To create your own
-typings, create a `readability.d.ts` file in the `urlToMd` directory and include
+typings, create a `readability.d.ts` ([GitHub link](https://github.com/benjaminkitt/serverless-microservice-guide/blob/step-6/functions/urlToMd/readability.d.ts)) file in the `urlToMd` directory and include
 the following definitions.
 
 ```typescript
@@ -90,6 +92,8 @@ export const handler = async (event: MarkdownEvent, context: Object, cb: Functio
   article.close()
 }
 ```
+
+[View the finished handler.ts on GitHub](https://github.com/benjaminkitt/serverless-microservice-guide/blob/step-6/functions/urlToMd/handler.ts)
 
 ## Test your code
 

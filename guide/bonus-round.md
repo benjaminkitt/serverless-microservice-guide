@@ -42,7 +42,7 @@ Install the [mute](https://github.com/shannonmoeller/mute) module.
 npm install --save-dev mute
 ```
 
-Create a `mute.d.ts` type definition.
+Create a `mute.d.ts` type definition ([GitHub link](https://github.com/benjaminkitt/serverless-microservice-guide/blob/bonus-round/functions/urlToMd/mute.d.ts).)
 
 ```typescript
 declare module "mute" {
@@ -76,3 +76,5 @@ beforeEach(async () => {
   unmute()
 })
 ```
+
+[View the updated handler.spec.ts on GitHub](https://github.com/benjaminkitt/serverless-microservice-guide/blob/bonus-round/functions/urlToMd/handler.spec.ts).

@@ -16,7 +16,7 @@ npm install --save upndown
 ### Create type definitions
 
 As with node-readability, upndown does not have type definitions available.
-Start by creating them in `upndown.d.ts`.
+Start by creating them in `upndown.d.ts` ([GitHub link](https://github.com/benjaminkitt/serverless-microservice-guide/blob/step-7/functions/urlToMd/upndown.d.ts)).
 
 ```typescript
 declare module "upndown" {
@@ -95,6 +95,8 @@ export const handler = async (event: MarkdownEvent, context: Object, cb: Functio
   article.close()
 }
 ```
+
+[See the finished handler.ts file on GitHub](https://github.com/benjaminkitt/serverless-microservice-guide/blob/step-7/functions/urlToMd/handler.ts).
 
 ## Test your code
 

@@ -72,7 +72,9 @@ your `tsconfig.json`. They should look like this:
 ]
 ```
 
-# Migrate function to typescript
+[This what your tsconfig.json file should look like.](https://github.com/benjaminkitt/serverless-microservice-guide/blob/step-3/tsconfig.json)
+
+## Migrate function to typescript
 
 Rename `handler.js` in your urlToMd directory to `handler.ts`. As Typescript is
 a superset of JavaScript, you can immediately compile `handler.ts` to JavaScript

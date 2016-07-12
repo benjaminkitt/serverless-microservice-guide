@@ -15,7 +15,7 @@ typings install --save-dev --global dt~mocha dt~sinon dt~chai dt~sinon-chai dt~n
 ## Create configuration file
 
 Start by creating a `test` folder in the project root. Next, create a
-`mocha.opts` file with the following configuration:
+`mocha.opts` [(GitHub link)](https://github.com/benjaminkitt/serverless-microservice-guide/blob/step-4/test/mocha.opts) file with the following configuration:
 
 ```
 ./functions/**/*.spec.js
