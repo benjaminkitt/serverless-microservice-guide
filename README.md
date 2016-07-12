@@ -4,6 +4,18 @@ with Node.js.
 
 * [Prerequisites](#prerequisites)
 * [Repo Structure](#repo-structure)
+* Guide
+ * [Step 1](guide/step-1.md) - Serverless Setup
+ * [Step 2](guide/step-2.md) - Creating the Function
+ * [Step 3](guide/step-3.md) - Add Typescript support
+ * [Step 4](guide/step-4.md) - Adding unit tests
+ * [Step 5](guide/step-5.md) - Configure API Gateway endpoint
+ * [Step 6](guide/step-6.md) - Write the Lambda function part 1 - node-readability
+ * [Step 7](guide/step-7.md) - Write the Lambda function part 2 - upndown
+ * [Bonus Round](guide/bonus-round.md)
+
+Have a quick read of the prerequisites below, then jump into
+[Step 1](guide/step-1.md)!
 
 ## Prerequisites
 
@@ -37,3 +49,6 @@ To follow this guide, simply clone this repo and follow the tutorial steps.
 If you get stuck at ay point, there is a branch that represents the project at
 the end of each step. For example, the Step 1 branch represents what your
 project should look like (minus gitignored files) at the end of Step 1.
+
+> If you check out a branch, be sure to run `npm install` to make sure that all
+dependencies are installed and the code is compiled.
