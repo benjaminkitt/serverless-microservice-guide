@@ -1,7 +1,9 @@
-'use strict';
+export interface MarkdownEvent {
+  url: string
+}
 
-module.exports.handler = function(event, context, cb) {
+export const handler = (event: MarkdownEvent, context: Object, cb: Function) => {
   return cb(null, {
-    message: 'Go Serverless! Your Lambda function executed successfully!'
+    url: event.url
   });
 };
