@@ -1,5 +1,9 @@
 /// <reference path="readability.d.ts"/>
+/// <reference path="upndown.d.ts"/>
 import * as readability from 'node-readability'
+import * as upndown from 'upndown'
+
+const und = new upndown()
 
 const makeReadable = (url: string): Promise<readability.ReadableArticle> =>
   new Promise((resolve: Function, reject: Function) => {
@@ -10,6 +14,17 @@ const makeReadable = (url: string): Promise<readability.ReadableArticle> =>
       resolve(article)
     })
   })
+
+const toMarkdown = (source: string): Promise<string> => {
+  return new Promise((resolve, reject) => {
+    und.convert(source, (err: Error, mkd: string) => {
+      if (err) {
+        return reject(err)
+      }
+      resolve(mkd)
+    })
+  }
+)}
 
 export interface MarkdownEvent {
   url: string
@@ -26,7 +41,17 @@ export const handler = async (event: MarkdownEvent, context: Object, cb: Functio
     return cb(e)
   }
 
-  cb(null)
+  console.info('converting to markdown...')
+  try {
+    mkd = await toMarkdown(article.content)
+  } catch (e) {
+    return cb(e)
+  }
+
+  cb(null, {
+    title: article.title,
+    content: mkd
+  })
 
   // Clean up readable article
   article.close()

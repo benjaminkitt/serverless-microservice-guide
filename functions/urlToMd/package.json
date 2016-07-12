@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "node-readability": "2.2.0"
+    "node-readability": "2.2.0",
+    "upndown": "2.0.2"
   }
 }
