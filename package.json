@@ -4,7 +4,7 @@
   "description": "Step by step guide to building a Serverless service with Node.js.",
   "main": " ",
   "scripts": {
-    "postinstall": "typings install && tsc && serverless project init -n serverless-microservice-guide -p serverless -r us-east-1 -s dev",
+    "postinstall": "typings install && cd functions/urlToMd && npm install && tsc && serverless project init -n serverless-microservice-guide -p serverless -r us-east-1 -s dev",
     "test": "mocha",
     "tdd": "tsc --watch & mocha --watch & wait"
   },
