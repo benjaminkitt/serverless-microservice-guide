@@ -5,7 +5,8 @@
   "main": " ",
   "scripts": {
     "test": "mocha",
-    "tdd": "tsc --watch & mocha --watch & wait"
+    "tdd": "tsc --watch & mocha --watch & wait",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
   "homepage": "https://github.com/benjaminkitt/serverless-microservice-guide#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "istanbul": "^1.1.0-alpha.1",
     "mocha": "^2.5.3",
     "nock": "^8.0.0",
     "sinon": "^1.17.4",
